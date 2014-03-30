@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>FluidGallery, a Scrolling Gallery JQuery Plugin | Demo</title>
+
+		<style type="text/css">
+
+		html, body{
+			background: black;
+			margin:0;
+		}
+
+		#container{
+			width:100%;
+			margin:0 auto;
+			max-width: 1024px;
+		}
+
+		.img-container{
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		.img-container img{
+			display: block;
+			height:auto;
+			width:100%;
+		}
+
+
+		</style>
+
+	</head>
+
+	<body>
+
+
+<div id="container">
+		<div class="img-container">
+			<img src="img/1.jpg" width="1024" height="687">
+		</div>
+		<div class="img-container">
+			<img src="img/2.jpg" width="1024" height="751">
+		</div>
+				<div class="img-container">
+			<img src="img/2a.jpg" width="620" height="1024">
+		</div>
+		<div class="img-container">
+			<img src="img/3.jpg" width="1024" height="757">
+		</div>
+		<div class="img-container">
+			<img src="img/5.jpg" width="1024" height="742">
+		</div>
+		<div class="img-container">
+			<img src="img/5a.jpg" width="621" height="1024">
+		</div>
+		<div class="img-container">
+			<img src="img/4.jpg" width="1024" height="705">
+		</div>
+		<div class="img-container">
+			<img src="img/6.jpg" width="1024" height="754">
+		</div>
+		<div class="img-container">
+			<img src="img/7.jpg" width="1024" height="757">
+		</div>
+		<div class="img-container">
+			<img src="img/8.jpg" width="1024" height="738">
+		</div>
+
+
+		<div class="img-container">
+			<img src="img/10.jpg" width="1024" height="742">
+		</div>
+
+
+</div>
+
+
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+		<script type="text/javascript" src="../src/jquery.fluidgallery.1.0.0.js"></script>
+
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+
+				$('#container').fluidGallery({margin:2});
+			});
+
+
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4803873-2']);
+      _gaq.push(['_setDomainName', '.robincwillis.com']);
+      _gaq.push(['_trackPageview','/AutoScroll']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+	</body>
+</html>

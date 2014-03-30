@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>FluidGallery, a Scrolling Gallery JQuery Plugin</title>
+
+		<link rel="stylesheet" type="text/css" href="css/fluidgallery.css" />
+	</head>
+
+	<body>
+
+
+<div id="container">
+		<h1>Fluid Gallery</h1>
+		<h2>An image gallery for people who like to scroll.</h2>
+		<div id="header">
+			<!-- Demo Header -->
+			<div id="demo_gallery">
+				<div class="img-container">
+					<img src="img/Archway Scene.jpg" width="600" height="349">
+				</div>
+				<div class="img-container">
+					<img src="img/Attack On a Convoy.jpg" width="592" height="280">
+				</div>
+				<div class="img-container">
+					<img src="img/Morning in Treetown.jpg" width="600" height="1006">
+				</div>
+				<div class="img-container">
+					<img src="img/chandara.jpg" width="978" height="453">
+				</div>
+				<div class="img-container">
+					<img src="img/Dinosaur-Boulevard1.jpg" width="600" height="282">
+				</div>
+				<div class="img-container">
+					<img src="img/dinosaurparade.jpg" width="600" height="299">
+				</div>
+				<div class="img-container">
+					<img src="img/Dinotopia Map.jpg" width="428" height="459">
+				</div>
+				<div class="img-container">
+					<img src="img/Dream Canyon.jpg" width="600" height="290">
+				</div>
+
+				<div class="img-container">
+					<img src="img/Palace in the Clouds.jpg" width="600" height="798">
+				</div>
+				<div class="img-container">
+					<img src="img/Ring Riders.jpg" width="600" height="357">
+				</div>
+				<div class="img-container">
+					<img src="img/Rumble and Mist.jpg" width="600" height="205">
+				</div>
+				<div class="img-container">
+					<img src="img/Sub Cutaway.jpg" width="600" height="458">
+				</div>
+				<div class="img-container">
+					<img src="img/Steep Street.jpg" width="558" height="559">
+				</div>
+				<div class="img-container">
+					<img src="img/twilight.jpg" width="600" height="379">
+				</div>
+				<div class="img-container">
+					<img src="img/waterfall.jpg" width="650" height="327">
+				</div>
+			</div>
+		</div>
+		<div id="menu">
+			Version Beta 1.0.0<br/>
+			Updated March 28th, 2014<br/>
+			Have questions or find a bug? Open an Issue on <a href="https://github.com/robincwillis/FluidGallery/issues" target="_blank">GitHub</a><br/>
+			<a class="button" href="src/jquery.fluidgallery.1.0.0.js" target="_blank">Download</a>
+			<!-- Download Link -->
+			<a class="button" href="example/index.html" target="_blank">Demo</a>
+			<!-- Demo Link -->
+			<a class="button" href="https://github.com/robincwillis/FluidGallery" target="_blank">Source</a>
+			<!-- Contact Link -->
+		</div>
+		<div style="clear:both"></div>
+		<div id="content">
+			<!-- Description -->
+			<div id="description">
+				<h3>Description</h3>
+				<p>
+					Takes a div of images and sets every landscape image too 100% width of it's container and for every portrait image divides that container between it and its next sibling while staggering right to left.
+				</p>
+				<h3>A couple of notes</h3>
+				<p>
+					This plugin uses the width and height attributes of img tags to calculate their new size. I didn't want to mess with checking if images are loaded and that stuff when in most cases I know the dimensions of the image I am serving before it's loaded.
+				</p>
+				<h3>Options</h3>
+				<ul>
+					<li><b>margin</b>: integer, spacing around each image, default is 0</li>
+				</ul>
+				<h3>Further Developments</h3>
+				<ul>
+					<li>Wrap images in container element through plugin</li>
+					<li>Add additional css styles through plugin</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Pre-HTML -->
+		<div id="code_html">
+		<h2>HTML</h2>
+<pre>
+&lt;div class="gallery"&gt;
+	&lt;div class="img-container"&gt;
+		&lt;img src="image.jpg" width="800" height="600"&gt;
+	&lt;/div&gt;
+	...
+&lt;/div&gt;
+</pre>
+		</div>
+		<!-- Pre-CSS -->
+			<div id="code_css">
+			<h2>CSS</h2>
+<pre>
+.img-container{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.img-container img{
+	display: block;
+	height:auto;
+	width:100%;
+}
+</pre>
+		</div>
+		<!-- Pre-Jquery -->
+		<div id="code_jquery">
+		<h2>JAVASCRIPT</h2>
+<pre>
+$('.gallery').fluidGallery({margin:2});
+</pre>
+		</div>
+
+
+		<div id="footer">
+
+			Check out my other JQuery Plugins and Projects at <a href="http://blog.robincwillis.com" target="_blank">blog.robincwillis.com</a> or <a href="https://github.com/robincwillis" target="_blank">Github</a>.
+
+			Also get in touch with me on <a href="https://twitter.com/#!/robincwillis" target="_blank">Twitter</a>.
+		</div>
+
+</div>
+
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+		<script type="text/javascript" src="src/jquery.fluidgallery.1.0.0.js"></script>
+
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+
+				$('#demo_gallery').fluidGallery({margin:2});
+			});
+
+
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4803873-2']);
+      _gaq.push(['_setDomainName', '.robincwillis.com']);
+      _gaq.push(['_trackPageview','/AutoScroll']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+	</body>
+</html>

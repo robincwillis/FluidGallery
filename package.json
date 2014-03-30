@@ -1,0 +1,13 @@
+{
+  "name": "FluidGallery",
+  "version": "1.0.0",
+  "author": "Robin Willis",
+  "description": "An image gallery for people who like to scroll",
+  "homepage": "http://robincwillis.github.io/FluidGallery/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/robincwillis/FluidGallery.git"
+  },
+  "dependencies": {
+  }
+}
